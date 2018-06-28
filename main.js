@@ -6,8 +6,6 @@ const log = console.log
 	$('.parallax').parallax();
 	$('.carousel').carousel();
 
-
-
 	$.ajax({
 		url: 'https://icanhazdadjoke.com/slack',
 		method: 'GET',
