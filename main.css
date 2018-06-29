@@ -2,36 +2,51 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	max-width: 100%;
 }
 
 main {
 	flex: 1 0 auto;
 }
 
+#logo.parallax-container {
+	height: 50em;
+}
+
+#vonnegut.parallax-container {
+	height: 15em;
+}
+
 .header {
 	text-align: center;
-	color: beige;
+	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
-	text-shadow: 2px 2px 8px #3A6968;
+	text-shadow: 2px 2px 1px #3A6968;
 }
 
 .projects {
 	color: white;
 	text-align: center;
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	padding-top: .75em;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-shadow: 2px 2px 1px #3A6968;
 }
 
-.carousel-item {
-	border-radius: 50%;
+.project-poster {
+	width: 80%;
+	border-radius: 1em;
 }
 
 .dadjoke {
 	text-align: center;
-	color: beige;
+	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-shadow: 4px 4px 10px black;
+}
+
+.dadjoke p {
+	font-size: 2em;
 }
 
 .portrait {
@@ -43,9 +58,50 @@ main {
 	padding-top: 2em;
 	padding-bottom: 2em;
 	color: beige;
+	border-top: solid white 1px;
 }
 
 .mtn-pic {
 	width: 100%;
 }
 
+.wibroje-logo {
+	width: 20em;
+}
+
+.project-posters {
+	padding-top: 2em;
+	padding-bottom: 1em;
+    box-shadow: 3px 10px 8px #888888;
+    text-align: center;
+}
+
+.shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.shadowfilter:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
+}
+
+#logoglow {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 2s linear;
+	-o-transition: all 2s linear;
+	transition: all 2s linear;	
+}
+
+#logoglow.active {
+	-webkit-filter: drop-shadow(0px 0px 3em rgba(255, 255, 255, 0.8));
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}

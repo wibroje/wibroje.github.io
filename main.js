@@ -4,7 +4,12 @@ const log = console.log
   	M.AutoInit();
 
 	$('.parallax').parallax();
-	$('.carousel').carousel();
+	$(function() {  
+	    var glower = $('#logoglow');
+		    window.setInterval(function() {  
+		        glower.toggleClass('active');
+		    }, 2500);
+	});
 
 	$.ajax({
 		url: 'https://icanhazdadjoke.com/slack',

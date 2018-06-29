@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="main.css" rel="stylesheet" type="text/css">
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -15,18 +16,38 @@
   </head>
   <body>
 
-      <div class="parallax-container">
+      <div class="parallax-container" id="logo">
         <header class="header transparent">
-          <br><br>
-          <h1 style="font-weight:bold;">William Brooks Jefferies<i class="fas fa-terminal"></i></h1>
+          <br>
+          <img src="wibroje-logo.png" class="wibroje-logo" id="logoglow">
+          <br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col l4 s12">
+                <h3 class="shadowfilter">web developer <i class="fas fa-terminal fa-xs"></i><br></h3>
+                </div>
+                <div class="col l4 s12">
+                <h3 class="shadowfilter">game enthusiast <i class="fas fa-gamepad fa-xs"></i><br></h3>
+                </div>
+                <div class="col l4 s12">
+                <h3 class="shadowfilter">health nut <i class="small material-icons">local_pizza</i><br></h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col l12 s12">
+                  <i class="fab fa-python fa-2x"></i> <i class="fab fa-js fa-2x"></i> <i class="fab fa-node-js fa-2x"></i> <i class="fab fa-react fa-2x"></i> 
+                </div>
+              </div>
+            </div>
+
         </header>
-        <div class="parallax mtn-pic"><img src="https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b201ea4f1683a8e092ff153c1b423e78&auto=format&fit=crop&w=2378&q=80"></div>
+        <div class="parallax mtn-pic"><img src="dakness.jpg"></div>
       </div>
     <main>
       <article class="container-fluid aboutme black">
         <div class="row">
           <div class="col l6 s12 center">
-            <img src="portrait2.jpg" class="portrait">
+            <img src="portrait2.jpg" class="portrait shadowfilter">
           </div>
           <div class="col l6 s12 center">
             <h5>A bit about me</h5>
@@ -39,28 +60,45 @@
           </div>
         </div>
       </article>
-
+      <div class="parallax-container" id="vonnegut">
+        <section class="projects">
+          <br>
+          <h3><i>"Science is magic that works" </i>- <b>Kurt Vonnegut</b></h3>
+        </section>
+        <div class="parallax"><img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5ab4ea4fd87e2144a8662bee0164010d&auto=format&fit=crop&w=1950&q=80"></div>
+      </div>
       <section>
         <div class="projects blue-grey">
-          <h5>Projects/Collaborations</h5>
+          <h3>Projects/Collaborations</h3>
         </div>
-        <div class="carousel blue-grey lighten-1" style="height:15em;">
-          <a href="https://wibroje.github.io/PROJECTONE/"><img src="catsketball.png" class="carousel-item"></a>
+        <div class="container-fluid project-posters blue-grey lighten-1">
+          <div class="row">
+            <div class="col l4 s12">
+              <a href="https://wibroje.github.io/PROJECTONE/" class="shadowfilter"><img src="catsketball.png" class="project-poster zoom"></a>
+              <br><br>
+              <a href="http://slapsave.surge.sh/" class="shadowfilter"><img src="slapsave.png" class="project-poster zoom"></a>
+              <br><br>
+            </div>
+            <div class="col l4 s12">
+              <a href="http://nopely.herokuapp.com/" class="shadowfilter"><img src="nopely.png" class="project-poster zoom"></a>
+              <br><br>
+            </div>
+            <div class="col l4 s12">
+              <a href="https://nopely-v2.herokuapp.com/" class="shadowfilter"><img src="nopely2.png" class="project-poster zoom"></a>
+              <br><br>
+              <a href="https://cringe-app.herokuapp.com/" class="shadowfilter"><img src="cringe.png" class="project-poster zoom"></a>
+            </div>
+              
 
-          <a href="http://nopely.herokuapp.com/"><img src="nopely.png" class="carousel-item"></a>
-
-          <a href="https://nopely-v2.herokuapp.com/"><img src="nopely2.png" class="carousel-item"></a>
-
-          <a href="http://slapsave.surge.sh/"><img src="slapsave.png" class="carousel-item"></a>
-
-          <a href="https://cringe-app.herokuapp.com/"><img src="cringe.png" class="carousel-item"></a>
-          
+              
+            </div>
+          </div>
         </div>
       </section>
 
-      <div class="parallax-container">
+      <div class="parallax-container" id="dad">
         <br><br><br>
-        <section class="dadjoke">
+        <section class="dadjoke shadowfilter">
         
         </section>
         <div class="parallax"><img src="http://www.cityclubofdenver.org/resources/Pictures/AdobeStock_74868311.jpeg"></div>
@@ -74,11 +112,11 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s6 center">
-            <a class="grey-text text-lighten-2" href="#!"><i class="fab fa-linkedin-in fa-10x"></i></a>
+            <a class="grey-text text-lighten-2 shadowfilter" href="https://www.linkedin.com/in/william-jefferies/"><i class="fab fa-linkedin-in fa-8x zoom"></i></a>
             <br>LinkedIn
           </div>
           <div class="col l6 s6 center">
-            <a class="grey-text text-lighten-2" href="#!"><i class="fab fa-github fa-10x"></i></a>
+            <a class="grey-text text-lighten-2 shadowfilter" href="https://github.com/wibroje"><i class="fab fa-github fa-8x shadowfilter zoom"></i></a>
             <br>Github
           </div>
         </div>
