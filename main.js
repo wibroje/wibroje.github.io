@@ -5,7 +5,7 @@ const log = console.log
 
 	$('.parallax').parallax();
 	$(function() {  
-	    var glower = $('#logoglow');
+	    var glower = $('.logoglow');
 		    window.setInterval(function() {  
 		        glower.toggleClass('active');
 		    }, 2500);

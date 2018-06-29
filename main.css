@@ -51,7 +51,7 @@ main {
 
 .portrait {
 	width: 100%;
-	border-radius: 50%;
+	border-radius: 1em;
 }
 
 .aboutme {
@@ -87,14 +87,14 @@ main {
 	-webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
 }
 
-#logoglow {
+.logoglow {
 	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
 	-webkit-transition: all 2s linear;
 	-o-transition: all 2s linear;
 	transition: all 2s linear;	
 }
 
-#logoglow.active {
+.logoglow.active {
 	-webkit-filter: drop-shadow(0px 0px 3em rgba(255, 255, 255, 0.8));
 }
 
@@ -104,4 +104,30 @@ main {
 
 .zoom:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 425px) {
+	.fa-python {
+		font-size: 2em;
+	}
+
+	.fa-js {
+		font-size: 2em;
+	}
+
+	.fa-node-js {
+		font-size: 2em;
+	}
+
+	.fa-react {
+		font-size: 2em;
+	}
+
+	.fa-linkedin-in {
+		font-size: 4em;
+	}
+
+	.fa-github {
+		font-size: 4em;
+	}
 }
