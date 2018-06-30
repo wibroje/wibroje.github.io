@@ -1,14 +1,16 @@
 $(document).ready(function(){
 const log = console.log
-
   	M.AutoInit();
+
+  	$('body').removeClass('fade-out');
+
 
 	$('.parallax').parallax();
 	$(function() {  
 	    var glower = $('.logoglow');
 		    window.setInterval(function() {  
 		        glower.toggleClass('active');
-		    }, 2500);
+		    }, 5000);
 	});
 
 	$.ajax({
