@@ -15,6 +15,15 @@
       <script src="main.js"></script>
   </head>
   <body>
+      <!--CSS Spinner-->
+      <div class="spinner-wrapper">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>
     <script>document.body.className += ' fade-out';</script>
     <div class="parallax-container" id="logo">
       <header class="header transparent"><br>
@@ -47,7 +56,7 @@
             </div>
           </div>
       </header>
-    <div class="parallax mtn-pic"><img src="dakness.jpg"></div>
+    <div class="parallax mtn-pic"><img src="dakness.jpg" class="dakness"></div>
     </div>
   <main>
     <article class="container-fluid aboutme black">
@@ -55,7 +64,7 @@
         <div class="col l6 s12 center"><br>
           <img src="mememe.jpeg" class="portrait shadowfilter">
         </div>
-        <div class="col l6 s12 center">
+        <div class="col l6 s12 center aboutmetext">
           <h5>A bit about me</h5><br>
             <p>I was born and raised in Fort Collins, CO by two incredible parents. Life there is nice and sweet, but I eventually moved to Denver seeking a more fast-paced environment. I grew up using the ever-growing internet and gaming- it is no surprise that I ended up learning to program.</p>
               <i class="fas fa-ellipsis-h fa-6x"></i>
@@ -78,23 +87,45 @@
       <div class="container-fluid project-posters blue-grey darken-1 lighten-1">
         <div class="row">
           <div class="col l4 s12">
-            <a href="https://wibroje.github.io/PROJECTONE/" class="shadowfilter"><img src="catsketball.png" class="project-poster zoom"></a>
+            <h5 class="desc-head">Catsketball</h5>
+            <a href="https://wibroje.github.io/PROJECTONE/" class="shadowfilter"><img src="catsketball.png" class="project-poster zoom"></a><br>
+            <article class="description">
+              <p>Catsketball is the first project I built at General Assembly. I used HTML Canvas and JavaScript to create a "cats playing basketball" sort of vibe. (The game is not yet built for mobile use)</p>
+            </article>
+              <a class="grey-text text-lighten-2 shadowfilter" href="https://github.com/wibroje/PROJECTONE"><i class="fab fa-github fa-lg shadowfilter zoom"></i></a>
             <br><br>
-            <a href="http://slapsave.surge.sh/" class="shadowfilter"><img src="slapsave.png" class="project-poster zoom"></a>
+            <h5 class="desc-head">SlapSave</h5>
+            <a href="http://slapsave.surge.sh/" class="shadowfilter"><img src="slapsave.png" class="project-poster zoom"></a><br>
+            <article class="description">
+              <p>SlapSave is an app I created using React and Express. The idea is to give folks a platform to schedule and view local pinball events as well as look up pinball machine tutorials.</p>
+            </article>
+              <a class="grey-text text-lighten-2 shadowfilter" href="https://github.com/wibroje/slapsavefe"><i class="fab fa-github fa-lg shadowfilter zoom"></i></a>
             <br><br>
           </div>
           <div class="col l4 s12">
-            <a href="http://nopely.herokuapp.com/" class="shadowfilter"><img src="nopely.png" class="project-poster zoom"></a>
+            <h5 class="desc-head">Nopely</h5>
+            <a href="http://nopely.herokuapp.com/" class="shadowfilter"><img src="nopely.png" class="project-poster zoom"></a><br>
+            <article class="description">
+              <p>Nopely is an app that allows its users to find bad movies that they may want to watch. Yes, some people are into that. Horror, scifi, romance and fantasy are the four genres users can pick from.</p>
+            </article>
+              <a class="grey-text text-lighten-2 shadowfilter" href="https://github.com/wibroje/nopely"><i class="fab fa-github fa-lg shadowfilter zoom"></i></a>
             <br><br>
           </div>
           <div class="col l4 s12">
-            <a href="https://nopely-v2.herokuapp.com/" class="shadowfilter"><img src="nopely2.png" class="project-poster zoom"></a>
+            <h5 class="desc-head">Nopely II</h5>
+            <a href="https://nopely-v2.herokuapp.com/" class="shadowfilter"><img src="nopely2.png" class="project-poster zoom"></a><br>
+            <article class="description">
+              <p>Nopely 2 is an improved prototype of its predecessor. This iteration allows users to actually find websites that host these movies so they can actually watch them.</p>
+            </article>
+              <a class="grey-text text-lighten-2 shadowfilter" href="https://github.com/wibroje/nopely2"><i class="fab fa-github fa-lg shadowfilter zoom"></i></a>
             <br><br>
-            <a href="https://cringe-app.herokuapp.com/" class="shadowfilter"><img src="cringe.png" class="project-poster zoom"></a>
+            <h5 class="desc-head">CRINGE (Collab)</h5>
+            <a href="https://cringe-app.herokuapp.com/" class="shadowfilter"><img src="cringe.png" class="project-poster zoom"></a><br>
+            <article class="description">
+              <p>CRINGE is an app that allows users to send random drunk texts to friends with the simple press of a button. I helped mostly by working on the back end in Python and Django.</p>
+            </article>
+              <a class="grey-text text-lighten-2 shadowfilter" href="https://github.com/ElijaHHall/CRINGE"><i class="fab fa-github fa-lg shadowfilter zoom"></i></a>
           </div>
-            
-
-            
           </div>
         </div>
       </div>

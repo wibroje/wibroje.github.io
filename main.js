@@ -2,6 +2,15 @@ $(document).ready(function(){
 const log = console.log
   	M.AutoInit();
 
+  	// $(window).on("load", function() {
+		preloaderFadeOutTime = 5000;
+		function hidePreloader() {
+		var preloader = $('.spinner-wrapper');
+		preloader.fadeOut(preloaderFadeOutTime);
+		}
+		hidePreloader();
+	// });
+
   	$('body').removeClass('fade-out');
 
 
