@@ -19,6 +19,10 @@ main {
 	flex: 1 0 auto;
 }
 
+footer {
+	border-top: solid white 1px;
+}
+
 .spinner-wrapper {
 position: fixed;
 top: 0;
@@ -31,10 +35,10 @@ z-index: 999999;
 
 .sk-folding-cube {
 	position: absolute;
-	top: 48%;
-	left: 48%;
-  	width: 40px;
-  	height: 40px;
+	top: 45%;
+	left: 45%;
+  	width: 10em;
+  	height: 10em;
   	position: relative;
   	-webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
@@ -141,6 +145,7 @@ z-index: 999999;
 	padding-top: .75em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-shadow: 2px 2px 1px #3A6968;
+	/*border-top: solid white 1px;*/
 }
 
 .project-poster {
@@ -228,7 +233,14 @@ z-index: 999999;
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 425px) {
+.fa-copyright {
+	color: salmon;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 	.fa-python {
 		font-size: 2em;
 	}
@@ -258,12 +270,74 @@ z-index: 999999;
 	}
 
 	.sk-folding-cube {
-	left: 45%;
+	left: 30%;
+	}
+
+	#space {
+		width: 180%;
 	}
 }
 
-@media screen and (min-width: 768px) {
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	#logo.parallax-container {
+		height: 55em;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
 	.aboutme p {
 		margin: 0 15%;
 	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	.aboutme p {
+		margin: 0 15%;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	.aboutme p {
+		margin: 0 15%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+
+
+}
+
+@media screen and (min-width: 768px) {
+
 }
