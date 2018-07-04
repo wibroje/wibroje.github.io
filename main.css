@@ -345,7 +345,11 @@ and (min-width : 1824px) {
 	}
 
 	.sk-folding-cube {
-		left: 48%;
+		left: 49%;
+	}
+
+	.portrait {
+		width: 80%;
 	}
 }
 
