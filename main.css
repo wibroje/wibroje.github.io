@@ -37,8 +37,8 @@ z-index: 999999;
 	position: absolute;
 	top: 45%;
 	left: 45%;
-  	width: 10em;
-  	height: 10em;
+  	width: 40px;
+  	height: 40px;
   	position: relative;
   	-webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
@@ -269,12 +269,16 @@ and (max-device-width : 480px) {
 		font-size: 2em;
 	}
 
-	.sk-folding-cube {
-	left: 30%;
-	}
-
 	#space {
 		width: 180%;
+	}
+
+	.wibroje-logo {
+		width: 18em;
+	}
+
+	.sk-folding-cube {
+		left: 45%;
 	}
 }
 
@@ -298,6 +302,10 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 	.aboutme p {
 		margin: 0 15%;
+	}
+
+	.sk-folding-cube {
+		left: 46%;
 	}
 }
 
@@ -323,6 +331,10 @@ and (min-width : 1224px) {
 	.aboutme p {
 		margin: 0 15%;
 	}
+
+	.sk-folding-cube {
+		left: 48%;
+	}
 }
 
 /* Large screens ----------- */
@@ -331,13 +343,19 @@ and (min-width : 1824px) {
 	.aboutme p {
 		margin: 0 15%;
 	}
+
+	.sk-folding-cube {
+		left: 48%;
+	}
 }
 
-@media screen and (max-width: 425px) {
-
-
-}
-
-@media screen and (min-width: 768px) {
-
+/* iPhone X ------------ */
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+	.sk-folding-cube {
+		left: 43%;
+	}
 }
